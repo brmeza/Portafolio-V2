@@ -1,0 +1,217 @@
+/* Estilos principales */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-img {
+    padding-top: 20px;
+    margin: 50px;
+    height: 400px;
+    border-radius: 20%;
+}
+
+.banner-img img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 20%;
+}
+
+.banner-title {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.banner-title h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 150px;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.developer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -60px;
+}
+
+.developer h2 {
+    display: flex;
+    align-items: center;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 57px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.developer img {
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.banner-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-top: 30px;
+}
+
+.banner-btns p {
+    font-family: "Galdeano", system-ui;
+    font-size: 40px;
+}
+
+.banner-btns button {
+    font-family: "Fauna One", system-ui;
+    align-content: center;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.banner-btns button:hover {
+    scale: 1.1;
+}
+
+.btn-1 {
+    background-color: #D9D9D9;
+    color: #1E1E1E;
+}
+
+.btn-2 {
+    background-color: #1E1E1E;
+    color: #D9D9D9;
+    margin-left: 20px;
+}
+
+@media (max-width: 1038px) {
+
+    .banner-title h1 {
+        font-size: 100px; /* Reducir tamaño del título */
+    }
+
+    .developer h2 {
+        font-size: 50px;
+    }
+
+    .banner-btns p {
+        font-size: 30px; /* Reducir el tamaño del texto descriptivo */
+    }
+
+    .banner-btns button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 849px) {
+    .banner-title h1 {
+        font-size: 80px; /* Reducir tamaño del título */
+    }
+    .developer{
+        padding: 20px;
+        
+    }
+
+    .developer h2 {
+        font-size: 40px;
+    }
+
+    .banner-btns p {
+        font-size: 25px; /* Reducir el tamaño del texto descriptivo */
+    }
+
+    .banner-btns button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+    
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-img {
+        margin: 2px;
+        height: 200px; /* Ajuste de altura para pantallas pequeñas */
+    }
+
+    .banner-title h1 {
+        font-size: 80px; /* Reducir tamaño del título */
+    }
+
+    .developer h2 {
+        text-align: center;
+        padding-right: 34px;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    .developer img{
+        display: none; /* Ajustar tamaño de la imagen */
+    }
+
+    .banner-btns{
+        margin-top: 10px;
+    }
+    .banner-btns p {
+        font-size: 25px; /* Reducir el tamaño del texto descriptivo */
+        text-align: center;
+        margin: 0px;
+    }
+
+    .banner-btns {
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn-2 {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .banner{
+        padding: 10px;
+    }
+    .banner-img {
+        height: 200px;
+    }
+
+    .banner-title h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .developer{
+        margin-top: -10px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .developer h2 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 30px;
+    }
+
+    .banner-btns p {
+        font-size: 20px;
+    }
+
+    .banner-btns button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}

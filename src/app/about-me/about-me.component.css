@@ -1,0 +1,27 @@
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    font-weight: 500;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVE */
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .description {
+        font-size: 20px;  /* Reduce el tamaño de la fuente */
+        padding: 20px;    /* Ajusta el padding para pantallas más pequeñas */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .description {
+        font-size: 18px;  /* Reduce aún más el tamaño de la fuente */
+        padding: 15px;    /* Reduce el padding para móviles */
+    }
+}

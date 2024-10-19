@@ -1,0 +1,79 @@
+/* Estilos generales para los botones y lista de navegación */
+/* (mantén tu código original tal cual, no hay cambios aquí) */
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    font-family: "Fauna One", system-ui;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btns button:hover {
+    scale: 1.1;
+}
+
+.btn-1 {
+    background-color: #D9D9D9;
+    color: #1E1E1E;
+}
+
+.btn-2 {
+    background-color: #1E1E1E;
+    color: #D9D9D9;
+}
+
+.list {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.item {
+    margin: 0 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVE */
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .btns {
+        flex-direction: column; /* Cambia la dirección a vertical en pantallas pequeñas */
+        align-items: center;
+    }
+
+    button {
+        width: 80%; /* Asegura que los botones se ajusten mejor al ancho */
+        margin: 10px 0; /* Reduce el margen entre los botones */
+    }
+
+    .list {
+        display: none; /* Oculta la lista en pantallas pequeñas */
+        /*eliminar la lista */
+    }
+
+}
+
+/* Ajustes para pantallas muy pequeñas (como teléfonos móviles) */
+@media (max-width: 480px) {
+    button {
+        font-size: 18px; /* Reduce el tamaño de la fuente en botones */
+        padding: 8px 20px; /* Reduce el padding de los botones */
+    }
+
+}

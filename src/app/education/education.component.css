@@ -1,0 +1,77 @@
+.education {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+}
+
+.course p {
+    margin: 0;
+}
+
+.course-and-year {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    color: #1E1E1E;
+}
+
+.course-date {
+    padding-left: 20px;
+}
+
+.course-institution {
+    color: #979797;
+}
+
+.courses-img {
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.courses-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .education {
+        flex-direction: column; /* Cambia la disposición a columna para pantallas pequeñas */
+        align-items: center;
+    }
+
+    .courses-img {
+        width: 300px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+    }
+
+    .course-and-year {
+        font-size: 15px; /* Reduce el tamaño del texto para mayor legibilidad */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .courses-img {
+        width: 200px; /* Reduce aún más el tamaño de la imagen en móviles */
+    }
+
+    .course-and-year {
+        font-size: 18px; /* Reduce el tamaño del texto para móviles */
+    }
+
+    .course-date {
+        padding-left: 10px; /* Ajusta el padding en móviles */
+    }
+}
+
