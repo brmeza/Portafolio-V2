@@ -78,3 +78,25 @@
     .proyect p { font-size: 0.95rem; }
     .proyect a { padding: 8px 14px; }
 }
+
+/* Dark theme */
+:host-context(body.dark-theme) .proyect {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+:host-context(body.dark-theme) .proyect h3 {
+    color: #f0f0f0;
+}
+
+:host-context(body.dark-theme) .proyect p {
+    color: #bbb;
+}
+
+:host-context(body.dark-theme) .proyect a {
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+}
+
+:host-context(body.dark-theme) .proyect a:hover {
+    background-color: #fff;
+}

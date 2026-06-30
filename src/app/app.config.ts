@@ -6,13 +6,17 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { routes } from './app.routes';
 import { LanguageService } from './services/language.service';
+import { ThemeService } from './services/theme.service';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-export function initializeLanguage(languageService: LanguageService) {
-  return () => languageService.init();
+export function initializeApp(languageService: LanguageService, themeService: ThemeService) {
+  return () => {
+    themeService.init();
+    return languageService.init();
+  };
 }
 
 export const appConfig: ApplicationConfig = {
@@ -30,8 +34,8 @@ export const appConfig: ApplicationConfig = {
     ),
     {
       provide: APP_INITIALIZER,
-      useFactory: initializeLanguage,
-      deps: [LanguageService],
+      useFactory: initializeApp,
+      deps: [LanguageService, ThemeService],
       multi: true,
     },
   ]

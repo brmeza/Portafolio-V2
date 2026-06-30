@@ -61,3 +61,29 @@
 		gap: 16px;
 	}
 }
+
+/* Dark theme */
+:host-context(body.dark-theme) .experience-item {
+	background: rgba(255, 255, 255, 0.05);
+	border-left-color: #e0e0e0;
+}
+
+:host-context(body.dark-theme) .job-title {
+	color: #f0f0f0;
+}
+
+:host-context(body.dark-theme) .company {
+	color: #bbb;
+}
+
+:host-context(body.dark-theme) .date {
+	color: #999;
+}
+
+:host-context(body.dark-theme) .role {
+	color: #ccc;
+}
+
+:host-context(body.dark-theme) .tech {
+	color: #aaa;
+}
