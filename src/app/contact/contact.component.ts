@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
@@ -12,8 +13,14 @@ export class ContactComponent {
     window.location.href = "mailto:bfmeza@unimayor.edu.co";
   }
 
-  download() {
-    window.location.href = "https://drive.google.com/uc?export=download&id=1H6if7IwVA1chwLhQFO-m1Sf_csotX5ro";
+    download() {
+    const url = '/assets/docs/cv_Brayan_Meza.pdf';
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'cv_Brayan_Meza.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 
   linkedin(){

@@ -7,6 +7,12 @@
     font-family: 'Inter', sans-serif;
 }
 
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
 .nav h1 {
     font-family: 'Jersey 10', sans-serif;
     font-size: 30px;
@@ -18,10 +24,53 @@
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .item {
     margin: 0 25px;
+}
+
+.language-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.flag-icon {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.4;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.flag-icon svg {
+    display: block;
+}
+
+.flag-icon.active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.divider {
+    opacity: 0.25;
+    font-size: 14px;
+    color: #999;
 }
 
 a {
@@ -36,6 +85,13 @@ a {
         flex-direction: column;
         align-items: center;
         padding: 10px 20px;
+    }
+
+    .nav-actions {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
     }
 
     .list {
@@ -55,6 +111,10 @@ a {
 @media (max-width: 480px) {
     .nav {
         position: relative;
+    }
+
+    .nav-actions {
+        width: 100%;
     }
 
     .list {
@@ -90,5 +150,10 @@ a {
     .item {
         margin: 15px 0;
         text-align: center;
+    }
+
+    .language-toggle {
+        width: 100%;
+        justify-content: center;
     }
 }

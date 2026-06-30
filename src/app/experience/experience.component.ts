@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-education',
+  selector: 'app-experience',
   standalone: true,
   imports: [TranslateModule],
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css']
+  templateUrl: './experience.component.html',
+  styleUrl: './experience.component.css'
 })
-export class EducationComponent {
+export class ExperienceComponent {
 
 }

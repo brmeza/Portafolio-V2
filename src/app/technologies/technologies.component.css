@@ -1,83 +1,78 @@
 .technologies {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+    padding: 10px 20px;
 }
 
 .sub-tec {
     font-family: 'Inter', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.25rem;
+    text-align: left;
+    margin: 0 0 12px 0;
 }
 
 .group {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
     align-items: center;
     justify-items: center;
 }
 
 .technology {
-    width: 120px;
+    width: 100%;
+    max-width: 220px;
     text-align: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 0;
+    padding: 12px;
     border-radius: 10px;
-    height: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    background: rgba(0,0,0,0.02);
 }
 
 .technology img {
-    width: 60px;
+    width: 56px;
     height: auto;
+    margin-bottom: 8px;
 }
 
 .technology-name {
-    margin: 10px 0px 0px 0px;
+    margin: 6px 0 0 0;
+    font-weight: 600;
 }
 
 .technology-form {
-    margin: 0;
+    margin: 4px 0 0 0;
     color: #979797;
+    font-size: 0.9rem;
 }
 
-/* Responsividad */
-/* Pantallas más pequeñas (menos de 768px): cambia a 1 columna */
+/* Breakpoints */
+@media (max-width: 1024px) {
+    .technologies {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .technology img { width: 48px; }
+}
+
 @media (max-width: 768px) {
     .technologies {
-      display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
-    .technology {
-        width: 80px;
-        text-align: center;
-        margin: 2px;
-        padding: 2px;
-        border-radius: 2px;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    .technology img {
-        width: 20px;
-        height: auto;
-    }
-    
-    .technology-name {
-        margin: 10px 0px 0px 0px;
-    }
-    
-    .technology-form {
-        margin: 0;
-        color: #979797;
-    }
+    .sub-tec { text-align: center; }
+    .group { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    .technology { max-width: 180px; padding: 10px; }
+}
 
-    
+@media (max-width: 480px) {
+    .technology img { width: 40px; }
+    .technology-name { font-size: 0.95rem; }
+    .technology-form { font-size: 0.85rem; }
 }

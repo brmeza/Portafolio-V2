@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-technologies',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './technologies.component.html',
   styleUrl: './technologies.component.css'
 })

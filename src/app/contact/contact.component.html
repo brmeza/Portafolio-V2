@@ -1,17 +1,17 @@
-<h2 class="sub-title">Contact</h2>
+<h2 class="sub-title">{{ 'CONTACT.TITLE' | translate }}</h2>
 <div class="btns">
-    <button class="btn-1" (click)="download()">Dowload CV</button>
-    <button class="btn-2" (click)="sendEmail()">Contact Me</button>
-    <button class="btn-1" translate="no" (click)="linkedin()">LinkedLn</button>
+    <button class="btn-1" (click)="download()">{{ 'COMMON.DOWNLOAD_CV' | translate }}</button>
+    <button class="btn-2" (click)="sendEmail()">{{ 'COMMON.CONTACT_ME' | translate }}</button>
+    <button class="btn-1" (click)="linkedin()">{{ 'CONTACT.LINKEDIN' | translate }}</button>
 </div>
 
 <div>
     <ul class="list">
-        <li class="item"><a href="#about">About Me</a></li>
-        <li class="item"><a href="#education">Education</a></li>
-        <li class="item"><a href="#technologies">Technologies</a></li>
-        <li class="item"><a href="#projects">Projects</a></li>
-        <li class="item"><a href="#contact">Contact</a></li>
+        <li class="item"><a href="#about">{{ 'NAV.ABOUT' | translate }}</a></li>
+        <li class="item"><a href="#education">{{ 'NAV.EDUCATION' | translate }}</a></li>
+        <li class="item"><a href="#technologies">{{ 'NAV.TECHNOLOGIES' | translate }}</a></li>
+        <li class="item"><a href="#projects">{{ 'NAV.PROJECTS' | translate }}</a></li>
+        <li class="item"><a href="#contact">{{ 'NAV.CONTACT' | translate }}</a></li>
     </ul>
 
 </div>
