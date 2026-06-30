@@ -4,17 +4,17 @@
     </div>
 
     <div class="banner-title">
-        <h1 translate="no">Full-Stack</h1>
+        <h1>{{ 'BANNER.TITLE' | translate }}</h1>
         <div class="developer">
-            <h2 translate="no">Developer</h2>
+            <h2>{{ 'BANNER.SUBTITLE' | translate }}</h2>
             <img src="../../assets/bat.png" alt="">  
         </div> 
         
         <div class="banner-btns">
-            <p>Hello I'm Brayan Meza</p>
+            <p>{{ 'BANNER.GREETING' | translate }}</p>
             <div class="btns">
-                <button class="btn-1" (click)="download()">Dowload CV</button>
-                <button class="btn-2" (click)="sendEmail()">Contact Me</button>
+                <button class="btn-1" (click)="download()">{{ 'COMMON.DOWNLOAD_CV' | translate }}</button>
+                <button class="btn-2" (click)="sendEmail()">{{ 'COMMON.CONTACT_ME' | translate }}</button>
             </div>     
         </div>     
     </div>

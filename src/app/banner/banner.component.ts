@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-banner',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './banner.component.html',
-  styleUrl: './banner.component.css'
+  styleUrls: ['./banner.component.css']
 })
 export class BannerComponent {
   sendEmail(){
@@ -13,6 +14,12 @@ export class BannerComponent {
   }
 
   download() {
-    window.location.href = "https://drive.google.com/uc?export=download&id=1H6if7IwVA1chwLhQFO-m1Sf_csotX5ro";
+    const url = '/assets/docs/cv_Brayan_Meza.pdf';
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'cv_Brayan_Meza.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 }

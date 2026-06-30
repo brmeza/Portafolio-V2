@@ -1,0 +1,89 @@
+.experience {
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 20px 30px;
+}
+
+.experience-item {
+	padding: 20px;
+	border-radius: 8px;
+	background: rgba(217,217,217,0.05);
+	border-left: 4px solid #1E1E1E;
+}
+
+.job-title {
+	font-family: 'Jersey 10', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	margin: 0 0 6px 0;
+	text-transform: capitalize;
+}
+
+.company {
+	margin: 0 0 12px 0;
+	color: #444;
+	font-size: 14px;
+}
+
+.date {
+	color: #777;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+.role {
+	font-size: 18px;
+	line-height: 1.6;
+	color: #333;
+	text-align: justify;
+	margin: 0 0 12px 0;
+}
+
+.tech {
+	margin: 0;
+	color: #666;
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	.job-title {
+		font-size: 18px;
+	}
+
+	.role {
+		font-size: 16px;
+	}
+
+	.experience {
+		padding: 12px;
+		gap: 16px;
+	}
+}
+
+/* Dark theme */
+:host-context(body.dark-theme) .experience-item {
+	background: rgba(255, 255, 255, 0.05);
+	border-left-color: #e0e0e0;
+}
+
+:host-context(body.dark-theme) .job-title {
+	color: #f0f0f0;
+}
+
+:host-context(body.dark-theme) .company {
+	color: #bbb;
+}
+
+:host-context(body.dark-theme) .date {
+	color: #999;
+}
+
+:host-context(body.dark-theme) .role {
+	color: #ccc;
+}
+
+:host-context(body.dark-theme) .tech {
+	color: #aaa;
+}

@@ -5,11 +5,18 @@
     margin-bottom: 40px;
 }
 
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+
 .course {
     display: flex;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-    margin-top: 15px;
+    margin-top: 6px;
+    padding: 2px 6px;
+    border-radius: 8px;
 }
 
 .course p {
@@ -19,28 +26,37 @@
 .course-and-year {
     display: flex;
     justify-content: space-between;
-    font-size: 25px;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 18px;
     color: #1E1E1E;
 }
 
 .course-date {
-    padding-left: 20px;
+    color: #666;
+    font-size: 14px;
+    white-space: nowrap;
 }
 
 .course-institution {
-    color: #979797;
+    color: #7d7d7d;
+    font-size: 14px;
+    margin-top: 6px;
 }
 
 .courses-img {
-    width: 400px;
+    width: 340px;
     border-radius: 50%;
     margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .courses-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -51,27 +67,31 @@
         align-items: center;
     }
 
-    .courses-img {
-        width: 300px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
-    }
+    .education { gap: 18px; }
+
+    .courses-img { width: 260px; }
 
     .course-and-year {
-        font-size: 15px; /* Reduce el tamaño del texto para mayor legibilidad */
+        font-size: 16px; /* Reduce el tamaño del texto para mayor legibilidad */
+        flex-direction: row;
     }
 }
 
 /* Ajustes para pantallas muy pequeñas (teléfonos móviles) */
 @media (max-width: 480px) {
     .courses-img {
-        width: 200px; /* Reduce aún más el tamaño de la imagen en móviles */
+        width: 180px; /* Reduce aún más el tamaño de la imagen en móviles */
     }
 
     .course-and-year {
-        font-size: 18px; /* Reduce el tamaño del texto para móviles */
+        font-size: 15px; /* Reduce el tamaño del texto para móviles */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
     }
 
     .course-date {
-        padding-left: 10px; /* Ajusta el padding en móviles */
+        padding-left: 0;
     }
 }
 

@@ -1,0 +1,64 @@
+{
+  "NAV": {
+    "ABOUT": "Sobre mí",
+    "EDUCATION": "Educación",
+    "EXPERIENCE": "Experiencia",
+    "TECHNOLOGIES": "Tecnologías",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contacto"
+  },
+  "COMMON": {
+    "DOWNLOAD_CV": "Descargar CV",
+    "CONTACT_ME": "Contáctame"
+  },
+  "BANNER": {
+    "TITLE": "Full-Stack",
+    "SUBTITLE": "Desarrollador",
+    "GREETING": "Hola, soy Brayan Meza"
+  },
+  "ABOUT": {
+    "TITLE": "Sobre mí",
+    "DESCRIPTION": "Ingeniero de Sistemas y desarrollador Back-End con conocimientos en Java y experiencia en el framework Spring. Tengo experiencia en desarrollo web con HTML, CSS, JavaScript y el framework Angular. He trabajado en gestión de bases de datos y control de versiones usando repositorios Git. Busco seguir creciendo técnicamente y aprender junto con mi equipo.\n\nValoro el trabajo en equipo y la colaboración, y disfruto enseñar y aprender por igual. Me adapto bien al cambio con energía y dedicación. Estoy listo para asumir retos y, cuando sea necesario, aprender nuevas áreas para responder a las necesidades del proyecto y del negocio."
+  },
+  "EDUCATION": {
+    "TITLE": "Educación"
+  },
+  "TECHNOLOGIES": {
+    "TITLE": "Tecnologías",
+    "FRONT_END": "Front-end",
+    "BACK_END": "Back-end",
+    "INTERMEDIATE": "INTERMEDIO"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia",
+    "TECHNOLOGIES": "Tecnologías:",
+    "JOB1_TITLE": "Desarrollador Fullstack",
+    "JOB1_DATE": "Diciembre 2024 - Actualidad",
+    "JOB1_ROLE": "Desarrollo y mantenimiento de aplicaciones web para clientes, entregando soluciones tanto en backend como en frontend. Las responsabilidades incluyen diseño e implementación de APIs, ajustes de reglas de negocio cuando es necesario e integración de capacidades de IA. También participo en el mantenimiento de aplicaciones de salud para servicios y consultas médicas, y en la construcción de plataformas de solicitud de servicios para asistencia en carretera, cuidado de mascotas, servicios del hogar y servicios legales.",
+    "JOB2_TITLE": "Desarrollador Web",
+    "JOB2_DATE": "Agosto 2024 - Noviembre 2024",
+    "JOB2_ROLE": "Desarrollé una aplicación web para un taller automotriz que permite a los usuarios agendar y gestionar citas de forma eficiente. Construí una interfaz responsiva y fácil de usar para simplificar la navegación y el proceso de reservas, al tiempo que mostraba los servicios y beneficios ofrecidos por el taller.",
+    "JOB3_TITLE": "Desarrollador Java",
+    "JOB3_DATE": "Mayo 2023 - Agosto 2024",
+    "JOB3_ROLE": "Desarrollé y mantuve servicios backend para la gestión de usuarios usando Spring Boot. Implementé endpoints RESTful para operaciones CRUD, optimicé el rendimiento y aseguré la integridad de los datos con Spring Data JPA y PostgreSQL.",
+    "JOB4_TITLE": "Desarrollador Java",
+    "JOB4_DATE": "Febrero 2022 - Enero 2023",
+    "JOB4_ROLE": "Desarrollé y documenté APIs RESTful usando Spring Boot para asegurar una comunicación eficiente entre el frontend y el backend. Implementé seguridad avanzada con Spring Security y autenticación JWT cuando fue necesario, y diseñé y optimicé bases de datos relacionales como PostgreSQL."
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "VIEW_PROJECT": "Ver proyecto",
+    "PROJECT1_TITLE": "Mantenimiento de equipos (Back-end)",
+    "PROJECT1_DESCRIPTION": "Este proyecto es una aplicación web diseñada para gestionar el mantenimiento de equipos. El sistema permite registrar equipos, administrar mantenimientos preventivos y correctivos, y hacer seguimiento al historial de mantenimiento de cada dispositivo.",
+    "PROJECT2_TITLE": "API Banco Internacional (Back-end)",
+    "PROJECT2_DESCRIPTION": "Este proyecto simula el backend de un sistema bancario usando Spring Boot. La aplicación permite operaciones básicas para gestionar usuarios, cuentas y transacciones.",
+    "PROJECT3_TITLE": "Abano Cosmetics (Front-end)",
+    "PROJECT3_DESCRIPTION": "Sitio web de referencia para una tienda de cosméticos. Este proyecto fue generado con Angular CLI versión 17.3.9.",
+    "PROJECT4_TITLE": "SpringSecurityJWT (Autenticación Back-end)",
+    "PROJECT4_DESCRIPTION": "Este proyecto implementa un sistema de autenticación y autorización usando Spring Security con JSON Web Tokens (JWT). A continuación se muestran los detalles de cómo funciona, cómo instalarlo y cómo usarlo."
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "LINKEDIN": "LinkedIn"
+  }
+}

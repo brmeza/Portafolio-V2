@@ -16,12 +16,76 @@
 
 .list {
     display: flex;
-    justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
-.item {
-    margin: 0 25px;
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.language-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.language-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 999px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.flag-icon {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.4;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.flag-icon svg {
+    display: block;
+}
+
+.flag-icon.active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.divider {
+    opacity: 0.25;
+    font-size: 14px;
+    color: #999;
 }
 
 a {
@@ -33,8 +97,8 @@ a {
 /* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .nav {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
         padding: 10px 20px;
     }
 
@@ -42,8 +106,8 @@ a {
         display: none;
     }
 
-    .item {
-        margin: 10px 0;
+    .nav-controls {
+        gap: 10px;
     }
 
     a {
@@ -51,44 +115,8 @@ a {
     }
 }
 
-/* Opcional: menú tipo hamburguesa para pantallas muy pequeñas */
 @media (max-width: 480px) {
     .nav {
-        position: relative;
-    }
-
-    .list {
-        display: none; /* Se oculta el menú por defecto */
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: white;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .nav.open .list {
-        display: flex; /* Se muestra el menú al hacer clic en el ícono */
-    }
-
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger div {
-        width: 25px;
-        height: 3px;
-        background-color: black;
-        margin: 4px 0;
-    }
-
-    .item {
-        margin: 15px 0;
-        text-align: center;
+        padding: 10px 16px;
     }
 }

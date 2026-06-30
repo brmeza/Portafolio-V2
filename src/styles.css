@@ -1,6 +1,7 @@
 html, body {
   margin: 15px 6%;
   padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sub-title{
@@ -12,10 +13,40 @@ html, body {
   margin-bottom: 10px;
 }
 
+/* Dark Theme */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-theme a {
+  color: #e0e0e0;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme p,
+body.dark-theme span,
+body.dark-theme li {
+  color: #e0e0e0;
+}
+
+body.dark-theme .language-toggle,
+body.dark-theme .theme-toggle {
+  background: rgba(50, 50, 50, 0.85);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e0e0e0;
+}
+
+body.dark-theme .divider {
+  color: #666;
+}
+
 @media (max-width: 978px) {
   html, body {
     margin: 0;
     padding: 0;
   }
-  
 }

@@ -1,0 +1,64 @@
+{
+  "NAV": {
+    "ABOUT": "About Me",
+    "EDUCATION": "Education",
+    "EXPERIENCE": "Experience",
+    "TECHNOLOGIES": "Technologies",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "COMMON": {
+    "DOWNLOAD_CV": "Download CV",
+    "CONTACT_ME": "Contact Me"
+  },
+  "BANNER": {
+    "TITLE": "Full-Stack",
+    "SUBTITLE": "Developer",
+    "GREETING": "Hello, I'm Brayan Meza"
+  },
+  "ABOUT": {
+    "TITLE": "About me",
+    "DESCRIPTION": "Computer Engineer and Back-End developer with knowledge in Java and expertise in the Spring framework. Skilled in web development with proficiency in HTML, CSS, JavaScript, and the Angular framework. Experienced in database management and version control using Git repositories. I aim to keep growing technically and to learn alongside my team.\n\nI value teamwork and collaboration, and I enjoy teaching and learning in equal measure. I adapt well to change with energy and dedication. I am ready to take on challenges and, when needed, learn new areas to meet project and business needs."
+  },
+  "EDUCATION": {
+    "TITLE": "Education"
+  },
+  "TECHNOLOGIES": {
+    "TITLE": "Technologies",
+    "FRONT_END": "Front-end",
+    "BACK_END": "Back-end",
+    "INTERMEDIATE": "INTERMEDIATE"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experience",
+    "TECHNOLOGIES": "Technologies:",
+    "JOB1_TITLE": "Fullstack Developer",
+    "JOB1_DATE": "December 2024 - Present",
+    "JOB1_ROLE": "Develop and maintain client web applications, delivering solutions across both backend and frontend. Responsibilities include API design and implementation, adjusting business rules when required, and integrating AI capabilities. Work also includes maintaining healthcare applications for medical services and consultations, and building service-request platforms for roadside assistance, pet care, home services, and legal services.",
+    "JOB2_TITLE": "Web Developer",
+    "JOB2_DATE": "August 2024 - November 2024",
+    "JOB2_ROLE": "Developed a web application for an automotive workshop that enables users to schedule and manage appointments efficiently. Built a responsive, user-friendly interface to simplify navigation and the booking process while showcasing the services and benefits provided by the workshop.",
+    "JOB3_TITLE": "Java Developer",
+    "JOB3_DATE": "May 2023 - August 2024",
+    "JOB3_ROLE": "Developed and maintained backend services for user management using Spring Boot. Implemented RESTful endpoints for CRUD operations, optimized performance, and ensured data integrity with Spring Data JPA and PostgreSQL.",
+    "JOB4_TITLE": "Java Developer",
+    "JOB4_DATE": "February 2022 - January 2023",
+    "JOB4_ROLE": "Developed and documented RESTful APIs using Spring Boot to ensure efficient communication between frontend and backend. Implemented advanced security with Spring Security and JWT authentication when required, and designed and optimized relational databases such as PostgreSQL."
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "VIEW_PROJECT": "View Project",
+    "PROJECT1_TITLE": "Equipment Maintenance (Back-end)",
+    "PROJECT1_DESCRIPTION": "This project is a web application designed to manage equipment maintenance. The system allows equipment registration, preventive and corrective maintenance management, and tracking the maintenance history for each device.",
+    "PROJECT2_TITLE": "International Bank API (Back-end)",
+    "PROJECT2_DESCRIPTION": "This project simulates the backend of a banking system using Spring Boot. The application allows basic operations for managing users, accounts, and transactions.",
+    "PROJECT3_TITLE": "Abano Cosmetics (Front-end)",
+    "PROJECT3_DESCRIPTION": "Reference website for a cosmetic store. This project was generated with Angular CLI version 17.3.9.",
+    "PROJECT4_TITLE": "SpringSecurityJWT (Back-end authentication)",
+    "PROJECT4_DESCRIPTION": "This project implements an authentication and authorization system using Spring Security with JSON Web Tokens (JWT). Below are the details on how it works, how to install it, and how to use it."
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "LINKEDIN": "LinkedIn"
+  }
+}
